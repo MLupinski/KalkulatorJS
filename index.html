@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<input type="text" name="label" id="label" class="inp2" disabled>
+			<input type="text" name="result" id="result" class="inp" value="0" disabled>
+		</div>
+		<div class="row1">
+			<button onclick="clearInput('ce')">CE</button>
+			<button onclick="clearInput('c')">C</button>
+			<button onclick="deleteOneNumber()">X</button>
+			<button onclick="actionOnNumber('/')">/</button>
+		</div>
+		<div class="row2">
+			<button onclick="selectNumb(7)">7</button>
+			<button onclick="selectNumb(8)">8</button>
+			<button onclick="selectNumb(9)">9</button>
+			<button onclick="actionOnNumber('*')">*</button>
+		</div>
+		<div class="row3">
+				<button onclick="selectNumb(4)">4</button>
+				<button onclick="selectNumb(5)">5</button>
+				<button onclick="selectNumb(6)">6</button>
+				<button onclick="actionOnNumber('-')">-</button>
+		</div>
+		<div class="row4">
+			<button onclick="selectNumb(1)">1</button>
+			<button onclick="selectNumb(2)">2</button>
+			<button onclick="selectNumb(3)">3</button>
+			<button onclick="actionOnNumber('+')">+</button>
+		</div>
+		<div class="row5">
+			<button onclick="">+-</button>
+			<button onclick="selectNumb(0)">0</button>
+			<button onclick="selectNumb(',')">,</button>
+			<button onclick="actionOnNumber('=')">=</button>
+		</div>
+	</div>
+<script src="index.js"></script>
+</body>
+</html>
